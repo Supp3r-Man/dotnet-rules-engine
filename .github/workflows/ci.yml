@@ -1,0 +1,23 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+      - name: Restore
+        run: dotnet restore
+      - name: Build (warnings are errors)
+        run: dotnet build --no-restore -c Release -warnaserror
+      - name: Test
+        run: dotnet test --no-build -c Release --verbosity normal
+      - name: Run the demo
+        run: dotnet run --no-build -c Release --project demo/RulesEngine.Demo -- --customers samples/customers.csv --rules samples/rules.txt

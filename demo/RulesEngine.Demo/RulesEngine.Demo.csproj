@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RulesEngine.Demo</RootNamespace>
+    <AssemblyName>RulesEngine.Demo</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\RulesEngine\RulesEngine.csproj" />
+  </ItemGroup>
+
+</Project>

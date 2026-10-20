@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/demo/">
+    <Project Path="demo/RulesEngine.Demo/RulesEngine.Demo.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/RulesEngine/RulesEngine.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RulesEngine.Tests/RulesEngine.Tests.csproj" />
+  </Folder>
+</Solution>

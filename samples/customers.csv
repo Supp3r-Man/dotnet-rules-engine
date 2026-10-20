@@ -1,0 +1,13 @@
+id,name,age,country,status,vip,balance,score,signup,last_login,email,city
+C001,Alice Smith,34,US,Active,true,1520.50,0.92,2019-03-14,2026-10-18T09:30:00Z,alice@example.test,Austin
+C002,Aaron Blake,17,US,Active,false,20.00,0.41,2025-01-09,2026-10-19T16:45:00Z,aaron@example.test,Denver
+C003,Chloe Martin,45,CA,Active,false,980.00,0.77,2020-07-01,2026-09-02T11:00:00Z,chloe@example.test,Toronto
+C004,Bob Okafor,29,GB,Suspended,false,-45.25,0.35,2022-11-23,2026-06-30T08:15:00Z,,London
+C005,Diego Alvarez,52,MX,Active,true,15000.00,0.88,2018-05-30,2026-10-10T20:00:00Z,diego@example.test,Monterrey
+C006,Anna Petrov,41,CA,Closed,false,0.00,0.12,2017-02-18,2025-12-01T10:00:00Z,anna@example.test,
+C007,Emma Larsen,23,DK,Active,false,310.75,0.66,2024-08-08,,emma@example.test,Aarhus
+C008,Frank Mueller,67,DE,Active,false,7420.10,0.59,2016-12-12,2026-10-01T07:20:00Z,frank@example.test,Berlin
+C009,Grace Kim,19,US,Suspended,false,5.00,0.30,2026-01-15,2026-10-17T13:00:00Z,grace@example.test,Seattle
+C010,Hiro Tanaka,38,JP,Active,true,2210.00,0.95,2021-04-04,2026-10-19T23:59:00Z,,Osaka
+C011,Alicia Gomez,30,US,Active,false,610.00,0.71,2023-06-06,2026-03-14T12:00:00Z,alicia@example.test,Miami
+C012,Ivan Novak,61,CA,Active,false,120.00,0.50,2015-09-09,2024-10-20T12:00:00Z,ivan@example.test,Calgary

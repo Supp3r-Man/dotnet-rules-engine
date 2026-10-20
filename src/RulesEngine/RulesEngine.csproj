@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RulesEngine</RootNamespace>
+    <AssemblyName>RulesEngine</AssemblyName>
+    <Description>A small business-rules expression language that compiles to .NET expression trees.</Description>
+  </PropertyGroup>
+
+</Project>

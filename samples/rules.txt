@@ -1,0 +1,11 @@
+# name [priority N]: expression
+# Higher priority is evaluated first. Identifiers are case-insensitive property names.
+vip_review     priority 30: vip and balance between 1000 and 20000
+eligible_us_ca priority 20: age >= 18 and country in ['US','CA'] and not (status == "closed") and name startswith "A" or vip
+at_risk        priority 12: status == "Suspended" or balance < 0
+dormant        priority 15: lastLogin is null or daysSince(lastLogin) > 90
+good_score     priority 8: score * 100 >= 75.0
+local_city     priority 5: address.city matches "^(Austin|Toronto)$"
+no_email       priority 10: email is null
+long_tenure    priority 3: daysSince(signup) > 365 * 5
+senior         priority 1: age >= 60
