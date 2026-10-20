@@ -12,7 +12,7 @@ CLR type and compiled. The same checked tree can also be evaluated by an indepen
 back to text, explained condition by condition, and (for the subset that translates) handed to EF Core as a query
 predicate.
 
-This is a portfolio / showcase project, not a product. CI not yet confirmed.
+This is a portfolio / showcase project, not a product. CI ran green on the first run on GitHub Actions (ubuntu-latest, 2026-10-20).
 
 ## What is in the box
 
@@ -445,7 +445,7 @@ Run it yourself: `python scripts/mutation_check.py --check` (patterns), `python 
 * A rule nests at most 256 levels (configurable via `RuleOptions.MaxDepth`); a flat chain of more than ~255 `and`/`or` terms is rejected.
 * Compiled rules are not cached for you; compile once and reuse the delegate. Performance was **not benchmarked**.
 * The interpreter shares the binder with the compiler (see oracles).
-* Tested on Windows only with .NET 10.0.402; the CI workflow targets Ubuntu but has **not** been run yet. Only the SQLite EF provider was tried.
+* Tested on Windows only with .NET 10.0.402; the CI workflow ran green once on Ubuntu, but I did not test by hand on Linux or macOS. Only the SQLite EF provider was tried.
 * The test project pulls `Microsoft.EntityFrameworkCore.Sqlite` 10.0.0, whose native `SQLitePCLRaw.lib.e_sqlite3` 2.1.11 triggers a
   NuGet audit warning (NU1903); it is kept as a warning (test project only, in-memory database) rather than hidden.
 
@@ -460,7 +460,7 @@ dotnet run --project demo/RulesEngine.Demo -- --repl
 `nuget.config` clears all package sources and adds only nuget.org so restore works on machines with no user-level feed.
 
 CI: `.github/workflows/ci.yml` (Ubuntu, `actions/checkout@v7`, `actions/setup-dotnet@v6`, restore, build with `-warnaserror`, test,
-run the demo). **CI not yet confirmed.**
+run the demo). CI ran green on the first run on GitHub Actions (ubuntu-latest, 2026-10-20).
 
 ## Clone and license
 
